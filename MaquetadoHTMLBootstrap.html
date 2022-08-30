@@ -19,7 +19,7 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="Volver">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,9 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link" href="#Features">Features</a>
+              <a class="nav-link" href="#Pricing">Pricing</a>
               <a class="nav-link disabled">Disabled</a>
             </div>
           </div>
@@ -37,7 +37,7 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
       </nav>
     <div class="container text-center">
         <div class="row my-3 white">
-            <h1>Titulo del Portofolio</h1>
+            <h1 id="Home">Titulo del Portofolio</h1>
             <p>Este es el titulo de presentracion para el portofolio web</p>
         </div>
         <div class="row">
@@ -53,7 +53,7 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
     </div>
     <div class="container white">
         <div class="row py-5">
-            <h4 class="text-center">Titulo3</h4>
+            <h4 class="text-center" id="Features">Features</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis neque aperiam vel ab ipsam reiciendis quibusdam nam, dolores reprehenderit exercitationem sit architecto libero ex nobis quidem commodi accusamus facere recusandae:</p>
             <ul type="square">
                 <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci nostrum nemo nulla voluptates sapiente earum.</li>
@@ -62,7 +62,7 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta inventore rerum nihil!</li>
             </ul>
-            <h4 class="mt-5">Lista de ejemplo</h4>
+            <h4 class="mt-5" id="Pricing">Pricing</h4>
             <table class="table table-striped table-dark mt-2">
                 <thead>
                     <tr>
@@ -96,7 +96,10 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
             </table>
         </div>
     </div>
+    <div class="container mb-5">
+        <a href="#Volver"><button type="button" class="btn btn-outline-secondary" disabled>Volver</button></a>
+    </div>
     <!-- Bootstrap JS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
