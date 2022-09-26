@@ -20,91 +20,140 @@ background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, 
     <script src="https://kit.fontawesome.com/6ce0f944aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="Volver">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="Volver">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-              <a class="nav-link" href="#Features">Features</a>
-              <a class="nav-link" href="#Pricing">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link active" href="#Acerca _de">Acerca de</a>
+              <a class="nav-link active" href="#Experiencia">Experiencia</a>
+              <a class="nav-link active" href="#Educacion">Educación</a>
+              <a class="nav-link active" href="#H&S_Skills">Hard & Soft Skills</a>
+              <a class="nav-link active" href="#Proyectos">Proyectos</a>
+              <form class="row g-3">
+                <div class="col-auto">
+                  <label for="staticEmail2" class="visually-hidden">Email</label>
+                  <input type="text" readonly class="form-control-plaintext white" id="staticEmail2" value="email@example.com">
+                </div>
+                <div class="col-auto">
+                  <label for="inputPassword2" class="visually-hidden">Password</label>
+                  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Loggin</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
+    <div class="container mb-5" id="Home">
+        <img src="./CSS/Quantum_computer-1080x675.jpg" class="img-fluid" alt="Banner">
+    </div>
     <div class="container text-center">
+        <h3 class="text-start white" id="Acerca _de">Acerca de</h3>
         <div class="row my-3 white">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <img src="./CSS/Sin título.png" class="rounded float-start img-fluid" alt="Foto Perfil">
             </div>
-            <div class="col-md-8 py-5">
-                <h1 id="Home">Titulo del Portofolio</h1>
-                <p>Este es el titulo de presentracion para el portofolio web</p>
-                <a href="https://www.facebook.com/joaquin.villalbakibycz"><i class="fa-brands fa-facebook h3 px-2 white"></i></a>
-                <a href="https://github.com/Kibycz"><i class="fa-brands fa-square-github h3 px-2 white"></i></a>
-                <a href="villalbajoaki@gmail.com"><i class="fa-regular fa-envelope h3 px-2 white"></i></a>
+            <div class="col-md-9 py-5">
+                <h1>Joaquín Nicolás Villalba Kibycz</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit tempore cum magni velit vitae repudiandae ut sunt eos reiciendis fugiat omnis exercitationem in soluta cumque nesciunt tenetur enim, consectetur ipsam. Qui consequuntur molestiae perspiciatis unde nam est a dolores laborum tenetur enim ipsa alias eius dolorem, officia fugiat nisi!</p>
+                <a href=""><i class="fa-brands fa-facebook h3 px-2 white"></i></a>
+                <a href=""><i class="fa-brands fa-square-github h3 px-2 white"></i></a>
+                <a href=""><i class="fa-regular fa-envelope h3 px-2 white"></i></a>
             </div>            
         </div>
-        <div class="row mt-5">
-            <div class="col-md-6 p-3" style="background-color:gray ;">
-            <h3>Titulo1</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A libero ratione excepturi iure commodi ipsam laudantium, id eius recusandae rem praesentium possimus perferendis qui dolorum consectetur quaerat quas. Ab, cumque!</p>
-            </div>
-            <div class="col-md-6 p-3" style="background-color:burlywood ;">
-            <h3>Titulo2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque suscipit cum iusto amet minima voluptatem, quis est sint exercitationem expedita et necessitatibus tempore! Voluptatem eos veniam labore omnis tenetur.</p>
-            </div>
-        </div>
+        
     </div>
     <div class="container white">
-        <div class="row py-5">
-            <h4 class="text-center" id="Features">Features</h4>
+        <div class="p-5">
+            <h3 class="text-start" id="Experiencia">Experiencia</h3>
+            <br>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis neque aperiam vel ab ipsam reiciendis quibusdam nam, dolores reprehenderit exercitationem sit architecto libero ex nobis quidem commodi accusamus facere recusandae:</p>
             <ul type="square">
-                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci nostrum nemo nulla voluptates sapiente earum.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facilis vero sapiente.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet laudantium officiis soluta dolorum blanditiis deleniti obcaecati.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta inventore rerum nihil!</li>
+                <li class="row my-5">
+                    <img src="./CSS/Google.jpg" class="img-thumbnail col-md-2" alt="Google">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                    </div>
+                </li>
+                <li class="row my-5">
+                    <img src="./CSS/IBM-Color.jpg" class="img-thumbnail col-md-2" alt="IBM">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                    </div>
+                </li>
+                <li class="row my-5">
+                    <img src="./CSS/Microsoft.jpg" class="img-thumbnail col-md-2" alt="Microsoft">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                    </div>
+                </li>
+                <li class="row my-5">
+                    <img src="./CSS/logo-twitter.jpg" class="img-thumbnail col-md-2" alt="Twiter">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                    </div>
+                </li>
             </ul>
-            <h4 class="mt-5" id="Pricing">Pricing</h4>
-            <table class="table table-striped table-dark mt-2">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Dato1</th>
-                        <th>Dato2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>contenido</td>
-                        <td>contenido</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>contenido</td>
-                        <td>contenido</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>contenido</td>
-                        <td>contenido</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>contenido</td>
-                        <td>contenido</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3 class="mt-2 pt-3" id="Educacion">Educación</h3>
+            <br>
+            <ul>
+                <li class="row my-5">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <img src="./CSS/Escuela-primaria-87262687.jpg" class="img-thumbnail col-md-2" alt="Escuela Primaria">
+                </li>
+                <li class="row my-5">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                    </div>
+                    <img src="./CSS/escuela-secundaria.jpg" class="img-thumbnail col-md-2" alt="Escuela Secundaria">
+                </li>
+                <li class="row my-5">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                    </div>
+                    <img src="./CSS/logo-de-universidad-online.jpg" class="img-thumbnail col-md-2" alt="Universidad">
+                </li>
+                <li class="row my-5">
+                    <div class="col-md-10 ps-5">
+                      <h4>Lorem ipsum dolor sit.</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quibusdam!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <img src="./CSS/Argentina Programa.jpg" class="img-thumbnail col-md-2" alt="Argentina Programa">
+                </li>
+            </ul>
         </div>
+        <div class="row m-5">
+            <div class="pb-3" id="H&S_Skills"><h3>Habilidades</h3></div>
+            <div class="col-md-6 p-3" style="background-color:gray ;">
+             <h3>Hard Skills</h3>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A libero ratione excepturi iure commodi ipsam laudantium, id eius recusandae rem praesentium possimus perferendis qui dolorum consectetur quaerat quas. Ab, cumque!</p>
+            </div>
+            <div class="col-md-6 p-3" style="background-color:burlywood ;">
+             <h3>Soft Skills</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque suscipit cum iusto amet minima voluptatem, quis est sint exercitationem expedita et necessitatibus tempore! Voluptatem eos veniam labore omnis tenetur.</p>
+            </div>
+         </div>
     </div>
+    
     <div class="container mb-5">
         <a href="#Volver"><button type="button" class="btn btn-outline-secondary" disabled>Volver</button></a>
     </div>
