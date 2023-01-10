@@ -1,0 +1,122 @@
+{
+    "banner": "./assets/img/Quantum_computer-1080x675.jpg",
+    "perfil": "./assets/img/100k-ai-faces.jpg",
+    "name": "Alvaro Negrete Corrales",
+    "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit tempore cum magni velit vitae repudiandae ut sunt eos reiciendis fugiat omnis exercitationem in soluta cumque nesciunt tenetur enim, consectetur ipsam. Qui consequuntur molestiae perspiciatis unde nam est a dolores laborum tenetur enim ipsa alias eius dolorem, officia fugiat nisi!",
+    "experiencia": [
+        {
+            "id":1,
+            "thumbnail": "./assets/img/Google.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años",
+            "puesto": ""
+        },
+        {
+            "id":2,
+            "thumbnail": "./assets/img/IBM-Color.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años",
+            "puesto": ""  
+        },
+        {
+            "id":3,
+            "thumbnail": "./assets/img/Microsoft.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años",
+            "puesto": ""  
+        },
+        {
+            "id":4,
+            "thumbnail": "./assets/img/logo-twitter.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años",
+            "puesto": ""  
+        }
+    ],
+    "educacion": [
+        {
+            "id": 1,
+            "thumbnail": "./assets/img/Escuela-primaria-87262687.jpg",
+            "institucion": "Primaria.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años"
+        },
+        {
+            "id":2,
+            "thumbnail": "./assets/img/escuela-secundaria.jpg",
+            "institucion": "Secundaria",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años"    
+        },
+        {
+            "id":3,
+            "thumbnail": "./assets/img/logo-de-universidad-online.jpg",
+            "institucion": "Universidad",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años"
+        },
+        {
+            "id":4,
+            "thumbnail": "./assets/img/Argentina Programa.jpg",
+            "institucion": "Curso",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!",
+            "periodo" : "2 años"
+        }
+    ],
+    "proyectos": [
+        {
+            "id":1,
+            "titulo": "Tecnología en Desarrollo de Software",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?",
+            "imagen": "./assets/img/tecsoftware.jpeg",
+            "alt": "Proyecto Tecsoftware",
+            "periodo" : "2 años"
+        },
+        {
+            "id":2,
+            "titulo": "Proyecto Agile Development",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?",
+            "imagen": "./assets/img/desarrollo-de-software-1024x582.jpg",
+            "alt": "Proyecto Agile Development",
+            "periodo" : "2 años"
+        },
+        {
+            "id":3,
+            "titulo": "Curso Argentina Programa",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?",
+            "imagen": "./assets/img/banner-ok-argentina-programa.jpg",
+            "alt": "Logo Argentina Programa",
+            "periodo" : "2 años"
+        }
+    ],
+    "habilidades": [
+        {
+            "id": 1,
+            "tipo": "Hard",
+            "etiqueta1": "Frontend",
+            "etiqueta2": "Backend",
+            "etiqueta3": "Servidores",
+            "etiqueta4": "Base de Datos",
+            "progreso1": "50",
+            "progreso2": "25",
+            "progreso3": "10",
+            "progreso4": "70"
+        },
+        {
+            "id": 2,
+            "tipo": "Soft",
+            "etiqueta1": "Productividad",
+            "etiqueta2": "Resolutivo",
+            "etiqueta3": "Eficiente",
+            "etiqueta4": "Creativo",
+            "progreso1": "50",
+            "progreso2": "30",
+            "progreso3": "60",
+            "progreso4": "20"
+        }
+    ]
+}

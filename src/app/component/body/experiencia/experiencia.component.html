@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row my-3 mx-2">
+        <div class="text-start form" id="Experiencia">
+            <div><h3>Experiencia</h3></div>
+            <div>
+                <button type="button" class="btn" (click)="onClick()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <p class="pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis neque aperiam vel ab ipsam reiciendis quibusdam nam, dolores reprehenderit exercitationem sit architecto libero ex nobis quidem commodi accusamus facere recusandae:</p>
+        <ul class="white">
+            <li *ngFor="let experiencia of experienciaList" class="row my-5">
+                <div class="boton">
+                    <button type="button" class="btn" (click)="onDelete(experiencia)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <img [src]="experiencia.thumbnail" class="img-thumbnail col-md-2" alt="Google">
+                <div class="col-md-10 ps-5 rounded" style="background-color: #354f52;">
+                    <h4 class="pt-3">{{experiencia.empresa}}</h4>
+                    <p>{{experiencia.detalles}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

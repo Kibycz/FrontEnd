@@ -1,0 +1,14 @@
+<div class="row rounded m-2 my-3" style="background-color: #ccd5ae;">
+    <div *ngFor="let habilidades of habilidadesList">
+        <div class="row rounded m-2 my-3 py-4" style="background-color: #ccd5ae;">
+          <h4>{{habilidades.tipo}}</h4>
+          <div class="py-2">
+            <h6>{{habilidades.etiqueta1}}</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: {{habilidades.progreso1}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{habilidades.progreso1}}%</div>
+            </div>
+          </div>  
+          <br>
+        </div>
+     </div>
+</div>

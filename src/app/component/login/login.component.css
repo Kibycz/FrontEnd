@@ -1,0 +1,7 @@
+.centrar {
+    width: 200;
+    margin: 55px 55px;
+    background-color: #E6E6FA;
+    justify-items: center;
+    border-radius: 10px;
+}
