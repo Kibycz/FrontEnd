@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { PorfolioService } from '../../../../sevice/porfolio.service';
+import { iHard } from './iHard';
 
 @Component({
   selector: 'app-hard',
@@ -8,7 +9,7 @@ import { PorfolioService } from '../../../../sevice/porfolio.service';
 })
 export class HardComponent implements OnInit {
   @Output() btnClick = new EventEmitter()
-  habilidadesList: any;
+  habilidadesList: iHard[] = [];
 
   constructor(private datosPorfolio: PorfolioService) { }
 
@@ -23,5 +24,16 @@ export class HardComponent implements OnInit {
     this.btnClick.emit();
   }
 
+  onDelete(hard:iHard) {
+    //console.log(proyecto);
+    if(confirm("¿Esta seguro de eliminar?")){
+      this.datosPorfolio.deleteHardSkill(hard).subscribe(
+        () => (
+          this.habilidadesList = this.habilidadesList.filter((i) => {
+            return i.id !== hard.id})
+      ));
+    }
+    console.log(hard);
+  }
 
 }

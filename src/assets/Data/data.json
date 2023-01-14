@@ -98,14 +98,16 @@
             "id": 1,
             "tipo": "Hard",
             "etiqueta1": "Frontend",
-            "etiqueta2": "Backend",
-            "etiqueta3": "Servidores",
-            "etiqueta4": "Base de Datos",
-            "progreso1": "50",
-            "progreso2": "25",
-            "progreso3": "10",
-            "progreso4": "70"
+            "progreso1": "50"
         },
+        {
+            "id": 2,
+            "tipo": "Hard",
+            "etiqueta1": "Backend",
+            "progreso1": "70"
+        }
+    ],
+    "habilidades2": [
         {
             "id": 2,
             "tipo": "Soft",

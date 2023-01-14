@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Data } from '@angular/router';
 import { PorfolioService } from '../../../sevice/porfolio.service';
+import { iExperiencia } from './iExperiencia';
 
 @Component({
   selector: 'app-experiencia',
@@ -10,7 +11,7 @@ import { PorfolioService } from '../../../sevice/porfolio.service';
 export class ExperienciaComponent implements OnInit {
   @Output() btnClick = new EventEmitter()
   @Output() onDeleteData: EventEmitter<Data> = new EventEmitter()
-  experienciaList: any;
+  experienciaList: iExperiencia[] = [];
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
@@ -24,8 +25,15 @@ export class ExperienciaComponent implements OnInit {
     this.btnClick.emit();
   }
   
-  onDelete(data:Data) {
-    console.log(data)
-    this.onDeleteData.emit(data);
+  onDelete(experiencia:iExperiencia) {
+    if(confirm("¿Esta seguro de eliminar?")){
+      this.datosPorfolio.deleteExperiencia(experiencia).subscribe(
+        () => (
+          this.experienciaList = this.experienciaList.filter((i) => {
+            return i.id !== experiencia.id})
+      ));
+    }
+    console.log(experiencia);
   }
+  
 }

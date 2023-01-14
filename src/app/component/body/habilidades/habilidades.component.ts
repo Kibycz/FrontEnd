@@ -10,13 +10,10 @@ export class HabilidadesComponent implements OnInit {
   @Output() btnClick = new EventEmitter()
   habilidadesList: any;
 
-  constructor(/*private datosPorfolio: PorfolioService*/) { }
+  constructor() { }
 
   ngOnInit(): void {
-    /*this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.habilidadesList=data.habilidades;
-    })*/
+    
   }
 
   onClick() {

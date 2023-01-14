@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Data } from '@angular/router';
 import { PorfolioService } from '../../../sevice/porfolio.service';
+import { iEducacion } from './iEducacion';
 
 @Component({
   selector: 'app-educacion',
@@ -9,8 +10,8 @@ import { PorfolioService } from '../../../sevice/porfolio.service';
 })
 export class EducacionComponent implements OnInit {
   @Output() btnClick = new EventEmitter()
-  @Output() onDeleteData: EventEmitter<Data> = new EventEmitter()
-  educacionList: any;
+  @Output() onDeleteData: EventEmitter<iEducacion> = new EventEmitter()
+  educacionList: iEducacion[] = [];
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
@@ -24,9 +25,17 @@ export class EducacionComponent implements OnInit {
     this.btnClick.emit();
   }
 
-  onDelete(data:Data) {
-    console.log(data);
-    this.onDeleteData.emit(data);
+  onDelete(educacion:iEducacion) {
+    //console.log(iEducacion);
+    if(confirm("¿Esta seguro de eliminar?")){
+      this.datosPorfolio.deleteEducacion(educacion).subscribe(
+        () => (
+          this.educacionList = this.educacionList.filter((i) => {
+            return i.id !== educacion.id})
+      ));
+    }
+    console.log(educacion);
   }
+  
 
 }
