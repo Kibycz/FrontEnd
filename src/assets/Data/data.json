@@ -109,16 +109,16 @@
     ],
     "habilidades2": [
         {
-            "id": 2,
+            "id": 1,
             "tipo": "Soft",
             "etiqueta1": "Productividad",
-            "etiqueta2": "Resolutivo",
-            "etiqueta3": "Eficiente",
-            "etiqueta4": "Creativo",
-            "progreso1": "50",
-            "progreso2": "30",
-            "progreso3": "60",
-            "progreso4": "20"
+            "progreso1": "50"
+        },
+        {
+            "id": 2,
+            "tipo": "Soft",
+            "etiqueta1": "Creativo",
+            "progreso1": "30"
         }
     ]
 }

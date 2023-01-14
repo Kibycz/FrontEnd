@@ -26,7 +26,7 @@ export class PorfolioService {
   }
 
   deleteEducacion(educacion:iEducacion): Observable<iEducacion>{
-    const url = `${this.api}/educacion/${educacion.id}`
+    const url = `${this.api}/delete/educacion/${educacion.id}`
     return this.http.delete<iEducacion>(url);
   }
 
@@ -36,7 +36,7 @@ export class PorfolioService {
   }
 
   deleteSoftSkill(soft:iSoft): Observable<iSoft>{
-    const url = `${this.api}/habilidades/${soft.id}`
+    const url = `${this.api}/habilidades2/${soft.id}`
     return this.http.delete<iSoft>(url);
   }
 

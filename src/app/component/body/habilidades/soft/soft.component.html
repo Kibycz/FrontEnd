@@ -11,8 +11,8 @@
     </button>
   </div>
 </div>
-<div class="row rounded m-2 my-3" style="background-color: #ccd5ae;">
-    <div *ngFor="let habilidades of habilidadesList">
+<div class="row rounded m-2 my-3" style="background-color: #ccd5ae;" *ngFor="let habilidades of habilidadesList">
+    <div>
       <div class="boton">
         <button type="button" class="btn" (click)="onDelete(habilidades)">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
