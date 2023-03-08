@@ -1,8 +1,8 @@
 export interface iExperiencia {
-    id: number
-    thumbnail: string
+    id?: number
+    url: string
     empresa: string
-    detalles: string
+    tarea: string
     periodo: string
     puesto: string
 }

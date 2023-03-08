@@ -3,6 +3,7 @@ import { Data } from '@angular/router';
 import { PorfolioService } from '../../sevice/porfolio.service';
 import { proyecto } from './proyectos/proyecto';
 import { iEducacion } from './educacion/iEducacion';
+import { iExperiencia } from './experiencia/iExperiencia';
 
 @Component({
   selector: 'app-body',
@@ -14,6 +15,7 @@ export class BodyComponent implements OnInit {
   data: Data[] = [];
   proyectoList: proyecto[] = [];
   educacionList: iEducacion[] = [];
+  experienciaList: iExperiencia[] = [];
   
 
   constructor( private datosPorfolio:PorfolioService) { }
@@ -32,8 +34,9 @@ export class BodyComponent implements OnInit {
     console.log("Educación");
   }
 
-  editExperiencia() {
+  agregarExperiencia(experiencia:iExperiencia) {
     console.log("Experiencia");
+    this.datosPorfolio.agregarExperiencia(experiencia).subscribe((experiencia)=>(this.experienciaList.push(experiencia)))
   }
 
   editHabilidades() {

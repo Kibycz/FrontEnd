@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { PorfolioService } from '../../../sevice/porfolio.service';
+import { iAcercaDe } from './iAcercaDe';
 
 @Component({
   selector: 'app-acerca-de',
@@ -12,14 +13,14 @@ export class AcercaDeComponent implements OnInit {
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.acercaDe=data;
+    this.datosPorfolio.obtenerDatos().subscribe(persona =>{
+      //console.log('Datos acerca-de de persona' + persona);
+      this.acercaDe=persona;
     })
   }
 
-  onclick() {
+  /*onclick() {
     this.btnClick.emit();
-  }
+  }*/
 
 }

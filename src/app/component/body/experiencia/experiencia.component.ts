@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Data } from '@angular/router';
 import { PorfolioService } from '../../../sevice/porfolio.service';
 import { iExperiencia } from './iExperiencia';
 
@@ -9,21 +8,26 @@ import { iExperiencia } from './iExperiencia';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-  @Output() btnClick = new EventEmitter()
-  @Output() onDeleteData: EventEmitter<Data> = new EventEmitter()
+  @Output() addExp: EventEmitter<iExperiencia> = new EventEmitter()
+  url: string = "";
+  empresa: string = "";
+  tarea: string = "";
+  periodo: string = "";
+  puesto: string = "";
+
+  @Output() onDeleteData: EventEmitter<iExperiencia> = new EventEmitter()
   experienciaList: iExperiencia[] = [];
+
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.experienciaList=data.experiencia;
+    this.datosPorfolio.obtenerDatos().subscribe(persona =>{
+      //console.log(persona);
+      this.experienciaList=persona.listaExperiencia;
     })
   }
 
-  onClick() {
-    this.btnClick.emit();
-  }
+  
   
   onDelete(experiencia:iExperiencia) {
     if(confirm("¿Esta seguro de eliminar?")){
@@ -34,6 +38,19 @@ export class ExperienciaComponent implements OnInit {
       ));
     }
     console.log(experiencia);
+  }
+
+  onSubmit(){
+    console.log("Llega mal, pero llega");
+    if(this.url.length === 0 || this.empresa.length === 0 || this.tarea.length === 0 ||
+      this.periodo.length === 0 || this.puesto.length === 0){
+      alert("Ingrese contenido en todos los campos");
+      return
+    }
+    const {url, empresa, tarea, periodo, puesto} = this
+    const newExperiencia = {url, empresa, tarea, periodo, puesto}
+    this.addExp.emit(newExperiencia);
+    console.log(newExperiencia)
   }
   
 }

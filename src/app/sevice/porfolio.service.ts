@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
-import { Data } from '@angular/router';
 import { proyecto } from '../component/body/proyectos/proyecto';
 import { iEducacion } from '../component/body/educacion/iEducacion';
 import { iHard } from '../component/body/habilidades/hard/iHard';
@@ -12,16 +11,16 @@ import { iExperiencia } from '../component/body/experiencia/iExperiencia';
   providedIn: 'root'
 })
 export class PorfolioService {
-  private api = './assets/Data/data.json'
+  private api = 'https://porfolio-web.onrender.com'
 
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any> {
-    return this.http.get<any>('./assets/Data/data.json');
+    return this.http.get<any>('https://porfolio-web.onrender.com/persona/1');
   }
 
   deleteProyecto(proyecto:proyecto): Observable<proyecto>{
-    const url = `${this.api}/${'proyectos/'+ proyecto.id}`
+    const url = `${this.api}/${'delete'}/${'proyecto'}/${proyecto.id}`
     return this.http.delete<proyecto>(url);
   }
 
@@ -41,8 +40,13 @@ export class PorfolioService {
   }
 
   deleteExperiencia(experiencia:iExperiencia): Observable<iExperiencia>{
-    const url = `${this.api}/experiencia/${experiencia.id}`
+    const url = `${this.api}/${'delete'}/${'experiencia'}/${experiencia.id}`
     return this.http.delete<iExperiencia>(url);
+  }
+
+  agregarExperiencia(experiencia:iExperiencia): Observable<iExperiencia>{
+    //const url = `${this.api}/${'new'}/${'experiencia'}`
+    return this.http.post<iExperiencia>('https://porfolio-web.onrender.com/new/experiencia', experiencia);
   }
 
 }

@@ -1,5 +1,5 @@
 export interface iHard {
-    id: number
+    id?: number
     tipo: string
     etiqueta1: string
     progreso1: string

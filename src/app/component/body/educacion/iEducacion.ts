@@ -1,5 +1,5 @@
 export interface iEducacion {
-    id: number;
+    id?: number;
     thumbnail: string;
     institucion: string;
     detalles: string;
